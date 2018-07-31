@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>myproject</title>
+	<script type="text/javascript" src="./common/header.js" data-css="myproject" data-title="myproject"></script>
+</head>
+<body onload="ajax()">
+	<div id="wrapper">
+	<section id="container">
+		<div id="search">
+			<button id="search_button">查找</button>
+			<input type="tetx" placeholder="请输入查找的项目编号" id="search_input" >
+		</div>
+		<div id="project">
+			<div id="display">
+				<div id="add">
+					<a href="javascript:void(0)" id="show" onclick="show('popupdiv')"><img src="../images/add.png"></a>
+				</div>
+			</div>
+			<div id="icon">
+				<!-- <i id="left"><img src="../images/left.png"></i> -->
+								
+				<!-- <i id="right"><img src="../images/right.png"></i> -->
+				<div id="barcon" name="barcon"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="./common/footer.js"></script>
+	</section>
+	</div>
+	<div id="popupdiv" style="display:none;">
+		<a href="javascript:void(0)" onclick="closeDiv('popupdiv')" ><font style="font-size: 27px;margin-right: 5px;">×  </font></a>
+			<table>
+				<tr><th colspan="2"><h2>创建项目</h2></th></tr>
+				<tr>
+					<td colspan="2">
+						<span>项目名称:</span><input type="tetx" name="name3" id="name3" >
+						<br><span id="confirm2" style="font-size: 12px;height: 20px;display: block;line-height: 20px;"></span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					<span>项目描述:</span><input type="tetx" name="name4" id="name4">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" class="button1" value="创建" onclick="checkall()">
+					</td>
+					<td>
+						<input type="button" class="button2" value="取消" onclick="closeDiv('popupdiv')" >
+					</td>
+				</tr>
+			</table>
+	</div> 
+	<div class="description" style="display: none" id="description">
+		<a href="javascript:void(0)" onclick="closeDiv('description')" ><font style="font-size: 27px;margin-right: 5px;">×  </font></a>
+		<table>
+			<tr ><th colspan="2"><h2>项目资料</h2></th></tr>
+				<tr>
+					<td colspan="2">
+						<span class="Dnum" id="Dnum"></span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<span class="Dnam"></span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					<span class="Ddes"></span>
+					</td>
+				</tr>
+		</table>
+	</div>
+	<div id="alert">
+		<form id="form">
+			<table>
+				<tr><th colspan="2"><h2>创建项目</h2></th></tr>
+				<tr>
+					<td colspan="2">
+						<span>项目名称:</span><span class="t"></span>
+						<br><span id="confirm2" style="font-size: 12px;height: 20px;display: block;line-height: 20px;"></span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+					<span>项目描述:</span><span class="t"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="button" class="button1" value="修改">
+					</td>
+					<td>
+						<input type="button" class="button2" value="取消">
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

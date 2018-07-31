@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>createAPI</title>
+	<script type="text/javascript" src="./common/header.js" data-css="createAPI" data-title="createAPI"></script>
+</head>
+<body onload="ajax()">
+	<div id="wrapper">
+		<div id="container">
+			<form id="myForm">
+			<section id="left">
+				<div id="write">
+					<div id="name"><p>编辑内容</p></div>
+					<textarea cols="50" placeholder="代码！" class="code" id="text">	
+					</textarea>
+				</div>
+			</section>
+			<section id="right">
+				<div id="tab">
+					<div id="list">
+						<center>
+							<table rules="all">
+								<tr><th colspan="2">更新接口</th></tr>
+								<tr>
+									<td>名称</td>
+									<td><input type="text" name="mingchen" id="mingcheng" placeholder="项目名称" class="mingcheng" onblur="check_name()"><span id="comfirm1" style="font-size: 12px;line-height: 20px;float: left;display: block;"></span></td>
+								</tr>
+								<tr>
+									<td>方式</td>
+									<td><select onchange="sel(this)" id="mySelect"><option>get</option><option>post</option><option>put</option><option>delete</option></select></td>
+								</tr>
+								<tr>
+									<td>URL</td>
+									<td><input type="text" name="url" id="url" placeholder="项目链接" class="url" onblur="check_url()">
+									<span id="comfirm2" style="font-size: 12px;line-height: 20px;float: left;display: block;"></span></td>
+								</tr>
+								<tr>
+									<td>描述</td>
+									<td><input type="text" name="miaoshu" id="miaoshu" placeholder="项目描述" class="miaoshu" onblur="check_des()">
+									<span id="comfirm3" style="font-size: 12px;line-height: 20px;float: left;display: block;"></span></td>
+								</tr>
+								<tr>
+									<td>
+										<div id="login_click1" class="login_click"  onclick="reset()">  
+        								<a id="btlogin" href="javascript:void(0)" class="btlogin">清除</a>  
+										</div>
+									</td>
+									<td>
+										<div id="login_click2" class="login_click">  
+											<a id="btlogin" href="javascript:void(0)" class="btlogin" onclick="chuangjian()">创建
+											</a> 
+										</div>
+									</td>
+								</tr>
+							</table>
+						</center>
+						<!-- <ul>
+							<li  id="list1"><h4>接口信息</h4></li>
+								<li  id="list1">
+									<input type="text" name="mingchen" id="mingcheng" placeholder="项目名称" class="mingcheng" onblur="check_name()"><span id="comfirm1" style="font-size: 12px;line-height: 20px;float: left;display: block;"></span>
+								</li>
+								<li>
+									<select onchange="sel(this)" id="mySelect"><option>get</option><option>post</option><option>put</option><option>delete</option></select>
+								</li>
+								<li id="list2">
+									<input type="text" name="url" id="url" placeholder="项目链接" class="url" onblur="check_url()">
+									<span id="comfirm2" style="font-size: 12px;line-height: 20px;float: left;display: block;"></span>
+								</li>
+								<li id="list3">
+									<input type="text" name="miaoshu" id="miaoshu" placeholder="项目描述" class="miaoshu" onblur="check_des()">
+									<span id="comfirm3" style="font-size: 12px;line-height: 20px;float: left;display: block;"></span>
+								</li>
+								<li id="list4">
+									<div id="login_click1" class="login_click"  onclick="reset()">  
+        								<a id="btlogin" href="javascript:void(0)" class="btlogin">清除</a>  
+        								 
+									</div>
+									<div id="login_click2" class="login_click">  
+									<a id="btlogin" href="javascript:void(0)" class="btlogin" onclick="chuangjian()">创建</a> 
+								</div>
+								</li>
+						</ul> -->
+					</div>
+				</div>
+			</section>
+			</form>
+			<!-- <script type="text/javascript" src="./common/footer.js"></script> -->
+		</div>
+
+	</div>
+	
+</body>
+</html>

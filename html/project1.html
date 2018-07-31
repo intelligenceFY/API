@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>project1</title>
+	<script type="text/javascript" src="./common/header.js" data-css="project1" ></script>
+</head>
+<body onload="ajax()">
+	<div id="wrapper">
+	<section id="container">
+		<div id="view">
+			<div id="name"><h3 class="h3" id="h3"><!-- 项目名称 --></h3></div>
+			<div id="name1">项目描述:<span class="span3" id="span3"></span></div>
+			<div id="name1" class="name2">address:<span class="span4"></span></div>
+		</div>
+		<div id="project">
+			<div id="apply">
+				<input type="button" name="delete" id="delete" value="删除">
+				<input type="button" name="download" id="download" value="下载">
+				<input type="button" name="clone" id="clone" value="克隆">
+				<input type="button"  id="create" onclick="jump()" value="创建接口">
+			</div>
+			<div id="list">
+				<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;接口列表</p>
+				 <table class="table table-hover table-striped" id="table_result" rules="all">
+							<tr>
+								<td>名称</td>
+								<td>方法</td>
+								<td>URL</td>
+								<td>操作</td>
+							</tr>
+				</table>
+				<div id="barcon" name="barcon"></div>
+				<div id="icon">
+				<!-- <i id="left"><img src="../images/left.png"></i>
+				<i id="right"><img src="../images/right.png"></i> -->
+				
+				</div>
+			</div>
+			<div id="tips">
+				<textarea cols="10" rows="3" placeholder="留下你的评论吧！"></textarea>	
+				<input type="button" name="tijaio" id="tijiao" value="提交">
+			</div>
+		</div>
+		<script type="text/javascript" src="./common/footer.js"></script>
+	</section>
+	</div>
+	<script type="text/javascript" src="../js/pages/project1.js"></script>
+</body>
+</html>

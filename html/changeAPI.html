@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>changeAPI</title>
+	<link rel="stylesheet" type="text/css" href="../css/pages/changeAPI.css">
+	<script type="text/javascript" src="./common/header.js" data-css="changeAPI" data-title="changeAPI"></script>
+</head>
+<body onload="ajax()">
+	<main id="wrapper">
+		<div id="container">
+			<section id="left">
+				<div id="write">
+						<div id="name">
+							<p>编辑内容</p>
+						</div>
+					<textarea cols="50" placeholder="代码！">
+						
+					</textarea>
+				</div>
+			</section>
+			<section id="right">
+				<div id="tab">
+					<div id="list">
+						<center>
+							<table rules="all">
+								<tr><th colspan="2">更新接口</th></tr>
+								<tr>
+									<td>名称</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>方式</td>
+									<td><select onchange="sel(this)" id="mySelect"><option>get</option><option>post</option><option>put</option><option>delete</option></select></td>
+								</tr>
+								<tr>
+									<td>URL</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>描述</td>
+									<td></td>
+								</tr>
+								<tr>
+									<td colspan="2"><div id="login_click2" class="login_click">  
+									<a id="btlogin" href="javascript:void(0)" class="btlogin" onclick="genxin()">更新</a> 
+								</div>
+								<div id="login_click1" class="login_click">  
+									<a id="btlogin1" href="javascript:void(0)" class="btlogin" onclick="queding()">确定</a> 
+								</div></td>
+								</tr>
+							</table>
+						</center>
+					</div>
+				</div>
+			</section>
+		</div>
+		<script type="text/javascript" src="./common/footer.js"></script>
+	</main>
+</body>
+</html>
